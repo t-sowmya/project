@@ -1,0 +1,27 @@
+
+'{
+    "x": "Canada",
+    "value": "83",
+    "color": "red"
+},
+{
+    "x": "USA",
+    "value": "92",
+    "color": "blue"
+},
+{
+    "x": "UK",
+    "value": "72",
+    "color": "green"
+},
+{
+    "x": "China",
+    "value": "81",
+    "color": "yellow"
+},
+{
+    "x": "Mexico",
+    "value": "91",
+    "color": "orange"
+}
+    

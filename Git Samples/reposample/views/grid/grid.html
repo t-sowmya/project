@@ -1,0 +1,150 @@
+﻿<!DOCTYPE HTML>
+<html >
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Welcome to TQIM</title>
+     <!------Library js ------>
+    <script src="../../js/lib/jquery/jquery.min.js"></script>
+    <script src="../../js/lib/angular/angular.min.js"></script>
+    <script src="../../js/lib/grid/ui-grid.min.js"></script>
+    <script src="../../js/services/angular-touch.js"></script>
+    <script src="../../js/services/angular-animate.js"></script>
+    <script src="../../js/services/csv.js"></script>
+    <script src="../../js/services/pdfmake.js"></script>
+    <script src="../../js/services/vfs_fonts.js"></script>
+    <script src="../../js/services/ui-grid-stable.js"></script>
+    <!------grid css ------>
+    <link href="../../css/lib/grid/ui-grid.min.css" rel="stylesheet" />
+   <link rel="stylesheet" href="http://ui-grid.info/release/ui-grid-stable.css" type="text/css">
+    <!------reset css ------>
+    <link href="../../css/lib/main-styles.css" rel="stylesheet" />
+    <!------Bootstrap css ------>
+    <link href="../../css/lib/bootstrap/theme/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../css/lib/bootstrap/theme/bootstrap-theme.min.css" rel="stylesheet" />
+    <!------Bootstrap js ------>
+    <script src="../../js/lib/bootstrap/bootstrap.min.js"></script>
+    <script src="../../js/lib/bootstrap/bootstrap-datepicker.js"></script>
+     <!------Datepicker Js -->
+    <script src="../../js/lib/datepicker/datepicker-custom.js"></script>
+    <!------Datepicker css -->
+    <link href="../../css/lib/datepicker/datepicker.css" rel="stylesheet" />
+    <!------Custom css -->
+    <link href="../../css/main-styles.css" rel="stylesheet" />
+</head>
+<body >
+    <!--header-->
+    <header class="clearfix">
+        <div class="col-md-4">
+  <div class="mns-logo"><img src="../../images/mnsciences_logo.jpg" class="img-responsive" /></div>
+            </div>
+         <div class="col-md-8">
+             <div class="side-menu">
+                 
+                 <nav role="navigation" class="navbar navbar-default main-menu">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="#" class="navbar-brand mybrand">Main Menu</a>
+        </div>
+        <!-- Collection of nav links and other content for toggling -->
+        <div id="navbarCollapse" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav main-nav">
+                <!--<li><a class="welcome">Welcome: TQIM Tester</a></li>-->
+                <li class="active"><a href="#">My Homepage</a></li>
+                
+                      <li><a href="#">Report Manager</a></li>
+                      <li><a href="#">Utilities</a></li>
+                      <li><a href="#">Support</a></li>
+                      <li><a href="#">Logout</a></li>
+            </ul>
+          
+        </div>
+    </nav>
+                 <span class="welcome">Welcome: <span class="clr">TQIM Tester</span></span>
+             </div>
+         </div>
+       
+    </header>
+ <span class="my-dash">My Dashboard &gt; In Spec</span>
+    <div class="container-fluid marg table">
+       <div class="row">
+           <div class="col-xs-12 col-sm-12 col-md-12 ">
+                 <div class="query tab">
+                <div class="sec-title clearfix">
+                    <div class="row">
+                        <div class="col-md-4">
+                             <div class="input-group">
+                    <input type="text"  class="form-control input-sm" placeholder="Search&hellip;">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default input-sm">Go</button>
+                    </span>
+                </div>
+                        </div>
+                        <div class="col-md-4">
+                       <div class="row">
+                           <div class="col-md-2"> <label for="a" class="control-label report">Report</label></div>
+                           <div class="col-md-10 pad-o mar-o">
+                               <select class="form-control input-sm" id="a">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            </select>
+                           </div>
+
+                       </div>     
+           
+         
+
+         
+       
+                        </div>
+                        <div class="col-md-4">  <div class="btn-group">
+            <button type="button" data-toggle="dropdown" class="btn btn-default dropdown-toggle btn-sm">Action <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+            </ul>
+        </div></div>
+                    </div>
+                </div>
+			<div ng-app="app" ng-controller="MainCtrl">
+  <strong ng-bind="waiting"></strong> <strong>{{ wait }}</strong>
+  <br>
+  <div class="grid" ui-grid="gridOptions" ui-grid-selection ui-grid-exporter ui-grid-edit ></div>
+                  <div id="grid2" ui-grid="gridOptions2" class="grid"></div>
+</div>
+<!------control js ------>
+             <script src="../../js/controllers/app.control.js"></script>
+		 </div>
+            </div>
+       </div>
+     
+    </div>
+    <!--footer-->
+    <footer class="container-fluid clearfix">
+        <p class="pull-left">© 2015 TQIM group. All rights reserved</p>
+        <p class="pull-right">Designed and Developed by Centric</p>
+    </footer>
+     <script src="js/bootstrap-datepicker.js"></script>
+        <script type="text/javascript">
+            // When the document is ready
+            $(document).ready(function () {
+
+                $('#start-date').datepicker({
+                    format: "dd/mm/yyyy"
+                });
+                $('#end-date').datepicker({
+                    format: "dd/mm/yyyy"
+                });
+            });
+        </script>
+</body>
+</html>

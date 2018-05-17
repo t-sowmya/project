@@ -1,0 +1,6 @@
+ui-grid.min.js - v3.0.1 
+ui-grid-stable.js - v3.0.1 
+angular.min v1.4.2
+jQuery.min.js v1.11.3 
+angular-animate.js v1.3.16
+angular-touch.js v1.3.16

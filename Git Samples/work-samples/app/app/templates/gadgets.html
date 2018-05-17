@@ -1,0 +1,24 @@
+<div ng-controller="gadgetsController">
+    dear {{user.lastName}}, Please choose your favorite gadget.
+    <input type="text"  ng-model="search"/>
+    <table class="table">
+        <thead>
+        <tr>
+
+            <th>Company</th>
+            <th>Name</th>
+            <th>Version</th>
+            <th>Price</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="active" ng-repeat="gadget in gadgets|filter:search">
+            <td ><img class="img-thumbnail"  src="{{gadget.image}}"></td>
+            <td>{{gadget.company |uppercase}}</td>
+            <td>{{gadget.name|lowercase}}</td>
+            <td>{{gadget.version}}</td>
+            <td>{{gadget.price| currency:'USD$'}}</td>
+        </tr>
+    </tbody>
+    </table>
+</div>

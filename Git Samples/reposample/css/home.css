@@ -1,0 +1,79 @@
+.topSlice,
+.bar{
+    opacity:0.5;
+}
+
+.topSlice:hover, 
+.bar:hover{
+    opacity:1;
+}
+
+.bar rect {
+        fill: steelblue;
+        shape-rendering: crispEdges;
+      }
+
+.graph-Title{
+    font-weight:bold;
+    font-size:20px;
+}
+
+.graph-row{
+    text-align: center;
+}
+
+.graph-content{
+    display: inline-block;
+}
+
+.view-container{
+    margin:10px;5px;10px;5px;
+    border:1px solid;
+    background-color:white;
+    height:100%;
+    width:100%;
+}
+.view-container .header{
+    background-color:lightblue;
+    font-size:16px;
+}
+
+.d3-tip {
+        line-height: 1;
+        font-weight: bold;
+        padding: 12px;
+        background: rgba(0, 0, 0, 0.8);
+        background-color:black;
+        color: #fff;
+        border-radius: 2px;
+}
+
+.param-leftCol{
+    text-align:right;
+}
+
+.param-rightCol{
+    text-align:left;
+}
+
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+
+#tooltipUni {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    padding: 10px;
+}
+#tooltipUni.opaque {
+    opacity: 0;
+}
+#tooltipUni p {
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+}
